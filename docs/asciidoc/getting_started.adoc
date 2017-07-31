@@ -166,11 +166,9 @@ In version greater than 2.6.0, support for spring data rest was added.
 
 NOTE: This is still in ***incubation***.
 
-In order to use it
+==== Add the `springfox-data-rest` dependency
 
-1. add the `springfox-data-rest` dependency.
-
-==== Gradle
+===== Gradle
 [source,groovy]
 [subs="verbatim,attributes"]
 ----
@@ -179,7 +177,7 @@ dependencies {
 }
 ----
 
-==== Maven
+===== Maven
 [source,xml]
 [subs="verbatim,attributes"]
 ----
@@ -190,9 +188,9 @@ dependencies {
 </dependency>
 ----
 
-1. Import the configuration from the `springfox-data-rest` module as shown below
+==== Import the configuration
 
-==== java config
+===== java config
 [source,java]
 [subs="verbatim,attributes"]
 ----
@@ -200,7 +198,7 @@ dependencies {
 @Import({ ... springfox.documentation.spring.data.rest.configuration.SpringDataRestConfiguration.class, ...})
 ----
 
-==== xml config
+===== xml config
 Import the bean in your xml configuration by defining a bean of the following type
 
 [source,xml]
